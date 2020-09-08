@@ -17,7 +17,7 @@ void main() {
   group('format tests', () {
     test('format combinations', () {
       expect(
-          format(r'${key:HH:mm:ss}, $key, ${num:##.##}, $num2', {
+          format(r'%{key|HH:mm:ss}, %{key}, %{num|##.##}, %{num2}', {
             'key': DateTime(2020, 9, 11, 15, 24, 36),
             'num': 78.426,
             'num2': 1.5
